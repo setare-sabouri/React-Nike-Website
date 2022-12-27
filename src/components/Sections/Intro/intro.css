@@ -1,0 +1,12 @@
+header {
+    height: 10%;
+}
+
+.intro-section {
+    height: 80%;
+}
+
+#canvas-container {
+    width: 100%;
+    height: 100%;
+}
