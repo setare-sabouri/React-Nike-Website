@@ -1,6 +1,6 @@
 # How to open project
 1. Clone link or Download zip file
-2. open terminal and write `"npm install"`  this command will add node-modules file to your project
+2. after opening project folder make sue you are in the right path then open terminal and write `"npm install"`  this command will add node-modules file to your project
 3. then write `npm start` to run it 
 
 # Figma Design
