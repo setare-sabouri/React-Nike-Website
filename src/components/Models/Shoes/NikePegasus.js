@@ -6,7 +6,7 @@ const NikePegasus = ({ materials, nodes, positionx }) => {
             castShadow
             geometry={nodes.defaultMaterial.geometry}
             material={materials.NikeShoe}
-            material-color={"#414799"}
+            // material-color={"#414799"}
             position={positionx}
         />
     )
