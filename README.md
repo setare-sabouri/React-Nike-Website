@@ -21,7 +21,7 @@
 # 3D 
 # Tech Stack
 + React js
-+ JSX HTML/CSS
++ JSX/HTML/CSS
 + Javascript
 
 
