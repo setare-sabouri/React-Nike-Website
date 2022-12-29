@@ -19,6 +19,10 @@
 # Pages
 
 # 3D 
+# Tech Stach
++ React js
++ JSX HTML/CSS
++ Javascript
 
 
 
