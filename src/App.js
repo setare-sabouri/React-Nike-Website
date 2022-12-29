@@ -10,14 +10,14 @@ function App() {
   return (
     <div className="App">
       <div className='Header-Intro-Wrapper'>
-        <Header></Header>
-        <Intro></Intro>
+        <Header />
+        <Intro />
       </div>
-      <Products></Products>
-      <Features></Features>
-      <Populars></Populars>
-      <Promos></Promos>
-      <Footer></Footer>
+      <Products />
+      <Features />
+      <Populars />
+      <Promos />
+      <Footer />
     </div>
   );
 }
