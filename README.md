@@ -4,7 +4,7 @@
 3. then write `npm start` to run it 
 
 # Figma Design
-[Here](https://www.figma.com/file/hRQRo70YmdYzoPoXBFmZbZ/Nike-Website-Redesign-(Community)?node-id=1%3A2&t=zSJy7JxdyQHoXihP-0)
+[Link to design](https://www.figma.com/file/hRQRo70YmdYzoPoXBFmZbZ/Nike-Website-Redesign-(Community)?node-id=1%3A2&t=zSJy7JxdyQHoXihP-0)
 
 # Structure
 
