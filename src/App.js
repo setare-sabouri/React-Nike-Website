@@ -1,7 +1,12 @@
 import './App.css';
+<<<<<<< HEAD
 import { BrowserRouter } from "react-router-dom";
 
 import Navbar from './components/Sections/Header/Navbar';
+=======
+import "./styles/fonts.css"
+import Header from './components/Sections/Intro/header';
+>>>>>>> c42a4f6e71f10ed41f3283ec6c679a2eb1d4ee2f
 import Products from './components/Sections/Products/products';
 import Features from './components/Sections/Features/features';
 import Populars from './components/Sections/Populars/populars';

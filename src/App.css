@@ -4,12 +4,16 @@
   flex-direction: column;
   gap: 0.5rem;
   align-items: center;
+<<<<<<< HEAD
   background-color: rgb(251, 247, 247);
+=======
+  background-color: white;
+>>>>>>> c42a4f6e71f10ed41f3283ec6c679a2eb1d4ee2f
 }
 
 .Header-Intro-Wrapper {
   height: 100vh;
-  width: 100vw;
+  width: 90vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,5 +21,10 @@
 }
 
 .component {
+<<<<<<< HEAD
   width: 90%;
+=======
+  border: solid 0.2rem black;
+  width: 100%;
+>>>>>>> c42a4f6e71f10ed41f3283ec6c679a2eb1d4ee2f
 }

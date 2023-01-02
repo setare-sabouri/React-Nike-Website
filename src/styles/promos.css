@@ -1,0 +1,43 @@
+/* .promo-section {
+    width: 90%; 
+} */
+
+.promo-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 116px;
+    padding-left: 96px;
+    padding-right: 100px;
+}
+
+.promo-header {
+    /* margin-left: 96px; */
+    text-align: left;
+}
+
+.join-now-button {
+    display: flex;
+    width: 152px;
+    height: 56px;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400px;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+.promo-woman-image {
+    width: 546px;
+    height: 574px;
+    border-radius: 8px;
+
+}
