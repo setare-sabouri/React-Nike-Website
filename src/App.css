@@ -4,7 +4,7 @@
   flex-direction: column;
   gap: 0.5rem;
   align-items: center;
-  background-color: lightgray;
+  background-color: rgb(251, 247, 247);
 }
 
 .Header-Intro-Wrapper {
@@ -17,6 +17,5 @@
 }
 
 .component {
-  border: solid 0.2rem black;
   width: 90%;
 }

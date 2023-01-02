@@ -4,7 +4,7 @@ const Intro = () => {
     return (
         <section className="component intro-section">
             <img
-                src='hero-product.png'
+                src='./images/hero-product.png'
                 className='intro-img'
             />
             {/* <Model ModelGltf="nike_air_zoom_pegasus_36.glb" ></Model> */}
