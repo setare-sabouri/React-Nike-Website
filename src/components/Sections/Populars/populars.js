@@ -1,18 +1,13 @@
 import "../../../styles/popular.css";
-
+import UncontrolledExample from "./Carousel";
 const Populars = () => {
   return (
-    // <section className="popular-section">
-
-      <div className="popular-header">
-        <h1 className="header-font">Popular Picks</h1>
-        <p className="paragraph-font">
-          Our popular picks for most favorited Nike Men’s & Women’s shoes.
-        </p>
-        
-      </div>
-    // </section>
-  );
-};
+    <section className="Popular-section">
+      <h2>Popular Picks</h2>
+      <p>Our popular picks for most favorited Nike Men’s & Women’s shoes.</p>
+      <UncontrolledExample></UncontrolledExample>
+    </section >
+  )
+}
 
 export default Populars;
