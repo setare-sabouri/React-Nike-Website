@@ -1,9 +1,18 @@
-const Populars = () => {
-    return (
-        <section className="component">
-            <p>Populars</p>
-        </section>
-    )
-}
+import "../../../styles/popular.css";
 
-export default Populars;    
+const Populars = () => {
+  return (
+    // <section className="popular-section">
+
+      <div className="popular-header">
+        <h1 className="header-font">Popular Picks</h1>
+        <p className="paragraph-font">
+          Our popular picks for most favorited Nike Men’s & Women’s shoes.
+        </p>
+        
+      </div>
+    // </section>
+  );
+};
+
+export default Populars;
