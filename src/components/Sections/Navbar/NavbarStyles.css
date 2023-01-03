@@ -4,7 +4,7 @@ nav {
   justify-content: space-between;
   background: white;
   color: black;
-  width: 90%;
+  width: 100%;
 }
 #navbar {
   display: flex;
