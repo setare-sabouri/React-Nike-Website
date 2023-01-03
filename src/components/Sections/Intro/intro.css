@@ -7,6 +7,32 @@ header {
     position: relative;
 }
 
+.intro-text-outlined {
+    width: 100%;
+    font-family: 'Poppins';
+    font-size: 10rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(0%, 0%);
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.intro-text-main {
+    width: 100%;
+    font-family: 'Poppins';
+    font-size: 10rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(0, 15%);
+    background: linear-gradient(91.02deg, #4280CF 7.23%, #3975C0 14.99%, #0C315F 50.29%, #0A2444 63.22%, #03234B 85.09%, #4280CF 102.7%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 #canvas-container {
     width: 100%;
     height: 100%;
@@ -17,4 +43,19 @@ header {
     position: absolute;
     bottom: 0;
     transform: translate(-50%, 0%);
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .intro-text-main,
+    .intro-text-outlined {
+        font-size: 3rem;
+        height: 100%;
+        top: 30%;
+    }
+
+    .intro-img {
+        width: 100%;
+    }
 }
