@@ -1,11 +1,13 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import "../../../styles/popular.css";
 import Card from './Popular-Cards/Popular-Cards';
 import ReactSimplyCarousel from 'react-simply-carousel';
 
 function PopularsCarousel() {
-    const [activeSlideIndex, setActiveSlideIndex] = useState(0);
-
+    const [activeSlideIndex, setActiveSlideIndex] = useState(1);
+    useEffect(() => {
+        setActiveSlideIndex(0);
+    }, []);
     return (
         <div className='carousel-container'>
             <ReactSimplyCarousel
