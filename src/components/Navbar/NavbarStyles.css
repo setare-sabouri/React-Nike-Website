@@ -1,0 +1,34 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  color: black;
+  width: 90%;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: black;
+}
+
+#navbar li {
+  justify-content: center;
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  font: Helvetica;
+}
+
+#navbar li a:hover {
+  font-size: 1.2rem;
+  transition: 0.3s ease-in-out;
+}
