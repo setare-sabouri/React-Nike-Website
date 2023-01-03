@@ -3,17 +3,18 @@
 } */
 
 .promo-container {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 116px;
-    padding-left: 96px;
-    padding-right: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .promo-header {
     /* margin-left: 96px; */
     text-align: left;
+    width: 100%;
 }
 
 .join-now-button {
@@ -30,14 +31,19 @@
     border-radius: 4px;
 }
 
-
-
-
-
-
 .promo-woman-image {
-    width: 546px;
-    height: 574px;
+    width: 90%;
+    height: 100%;
     border-radius: 8px;
 
+}
+
+@media screen and (min-width: 600px) {
+    .promo-woman-image {
+        width: 50%;
+    }
+
+    .promo-header {
+        width: 50%;
+    }
 }

@@ -3,7 +3,7 @@ function Navbar() {
   return (
     <>
       <nav>
-        <div>
+        <div className="left-nav">
           <ul id="navbar">
             <li>
               <a href="index.html">

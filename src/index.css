@@ -22,7 +22,7 @@ code {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 2rem;
   align-items: center;
   background-color: white;
 }

@@ -19,7 +19,7 @@ const Promos = () => {
         <div className="join-now-button">Join Now</div>
       </div>
       <img className="promo-woman-image"
-        src="https://static.nike.com/a/videos/so_0/e328b4f3-ff6f-4d55-af2a-393cdc5ee755/air-max-sc-shoes-bd4QB6.jpg"
+        src="/Images/Promos/air-max-sc-shoes-bd4QB6.png"
         alt=""
       />
     </div>

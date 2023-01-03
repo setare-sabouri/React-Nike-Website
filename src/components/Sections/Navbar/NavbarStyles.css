@@ -6,17 +6,21 @@ nav {
   color: black;
   width: 100%;
 }
+
+.left-nav {
+  width: 100%;
+}
+
 #navbar {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-around;
   color: black;
 }
 
 #navbar li {
   justify-content: center;
   list-style: none;
-  padding: 0 20px;
   position: relative;
 }
 
