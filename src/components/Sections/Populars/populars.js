@@ -1,13 +1,15 @@
 import "../../../styles/popular.css";
-import UncontrolledExample from "./Carousel";
+import React, { useState } from 'react';
+import PopularsCarousel from "./Carousel";
 const Populars = () => {
   return (
-    <section className="Popular-section">
+    <section className="populars-component">
       <h2>Popular Picks</h2>
       <p>Our popular picks for most favorited Nike Men’s & Women’s shoes.</p>
-      <UncontrolledExample></UncontrolledExample>
+      <PopularsCarousel />
     </section >
   )
 }
 
 export default Populars;
+{/* <Card title={"ss"} imageSrc={"Images/Populars/Populars1.png"}></Card> */ }

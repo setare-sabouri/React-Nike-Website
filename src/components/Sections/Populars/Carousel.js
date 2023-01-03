@@ -1,46 +1,39 @@
-import Carousel from 'react-bootstrap/Carousel';
-function UncontrolledExample() {
+import { useState } from 'react';
+import "../../../styles/popular.css";
+import Card from './Popular-Cards/Popular-Cards';
+import ReactSimplyCarousel from 'react-simply-carousel';
+
+function PopularsCarousel() {
+    const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+
     return (
-        <Carousel>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src="holder.js/800x400?text=First slide&bg=373940"
-                    alt="First slide"
-                />
-                <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src="holder.js/800x400?text=Second slide&bg=282c34"
-                    alt="Second slide"
-                />
+        <div className='carousel-container'>
+            <ReactSimplyCarousel
+                className="carousel"
+                activeSlideIndex={activeSlideIndex}
+                onRequestChange={setActiveSlideIndex}
+                itemsToShow={2}
+                itemsToScroll={2}
+                showSlidesBeforeInit={true}
+                forwardBtnProps={{
+                    className: "Carousel-btn right",
+                    children: <span>{`>`}</span>,
+                }}
+                backwardBtnProps={{
+                    className: "Carousel-btn left",
+                    children: <span>{`<`}</span>,
+                }}
 
-                <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src="holder.js/800x400?text=Third slide&bg=20232a"
-                    alt="Third slide"
-                />
+                speed={400}
+                easing="linear"
+            >
+                <Card imageSrc={"Images/Populars/Populars1.png"}></Card>
+                <Card imageSrc={"Images/Populars/Populars2.png"}></Card>
+                <Card imageSrc={"Images/Populars/Populars3.png"}></Card>
 
-                <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
-                </Carousel.Caption>
-            </Carousel.Item>
-        </Carousel>
+            </ReactSimplyCarousel>
+        </div>
     );
 }
 
-export default UncontrolledExample;
+export default PopularsCarousel;

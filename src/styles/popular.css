@@ -1,3 +1,42 @@
-.Popular-section {
-    width: 100%;
+.populars-component {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.populars-component h2 {
+    font-size: 3rem;
+}
+
+.carousel-container {
+    padding: 2rem;
+    position: relative;
+}
+
+.carousel-container div {
+    display: flex;
+    gap: 2rem;
+}
+
+.Carousel-btn {
+    background-color: black;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.left {
+    right: 10%;
+    top: -3%;
+
+}
+
+.right {
+    right: 5%;
+    top: -3%;
 }
