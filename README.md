@@ -6,6 +6,7 @@
 # Figma Design
 [Link to design](https://www.figma.com/file/hRQRo70YmdYzoPoXBFmZbZ/Nike-Website-Redesign-(Community)?node-id=1%3A2&t=zSJy7JxdyQHoXihP-0)
 
+[Website Demo](https://react-nike-website.vercel.app/)
 # Structure
 
 # Components
