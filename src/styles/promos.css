@@ -3,8 +3,6 @@
 } */
 
 .promo-container {
-    width: 90%;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -33,7 +31,6 @@
 
 .promo-woman-image {
     width: 90%;
-    height: 100%;
     border-radius: 8px;
 
 }

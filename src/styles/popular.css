@@ -1,8 +1,6 @@
 .populars-component {
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 90%;
     align-items: start;
 }
 
@@ -22,15 +20,21 @@
 }
 
 .Carousel-btn {
-    background-color: black;
-    border-radius: 50%;
-    border: none;
+    background-color: rgb(255, 254, 254);
+    border: 2px solid black;
+    border-radius: 6px;
     color: white;
     cursor: pointer;
     font-size: 20px;
     width: 30px;
     height: 30px;
     position: absolute;
+}
+
+
+
+.Carousel-btn span {
+    color: black;
 }
 
 .left {
@@ -42,4 +46,14 @@
 .right {
     right: 5%;
     top: -3%;
+}
+
+.card-img {
+    width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    .right {
+        right: -2%;
+    }
 }
