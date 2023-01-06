@@ -2,19 +2,26 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: white;
   color: black;
   width: 100%;
 }
 
 .left-nav {
-  width: 100%;
+  width: 90%;
+}
+
+.right-nav {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
 
 #navbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   color: black;
 }
 
@@ -35,4 +42,12 @@ nav {
 #navbar li a:hover {
   font-size: 1.2rem;
   transition: 0.3s ease-in-out;
+}
+
+
+@media screen and (max-width:768px) {
+  #navbar li a {
+    font-size: 0.8rem;
+
+  }
 }
