@@ -4,6 +4,7 @@ import NikePegasus from './Shoes/NikePegasus';
 
 function Model({ ModelGltf }) {
     const { materials, nodes } = useGLTF(ModelGltf);
+
     return (
         <div id='canvas-container'>
             <Canvas shadows camera={{ position: [3, 0, 0], fov: 50 }}>

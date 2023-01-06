@@ -22,7 +22,6 @@ code {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   align-items: center;
   background-color: white;
 }
@@ -37,5 +36,7 @@ code {
 }
 
 .component {
-  width: 100%;
+  width: 90vw;
+  height: 100vh;
+  display: flex;
 }

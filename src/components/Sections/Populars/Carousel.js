@@ -15,7 +15,7 @@ function PopularsCarousel() {
                 activeSlideIndex={activeSlideIndex}
                 onRequestChange={setActiveSlideIndex}
                 itemsToShow={3}
-                itemsToScroll={3}
+                itemsToScroll={1}
                 showSlidesBeforeInit={true}
                 forwardBtnProps={{
                     className: "Carousel-btn right",
@@ -31,7 +31,9 @@ function PopularsCarousel() {
             >
                 <Card imageSrc={"Images/Populars/Populars1.png"}></Card>
                 <Card imageSrc={"Images/Populars/Populars2.png"}></Card>
-                <Card imageSrc={"Images/Populars/Populars3.png"}></Card>
+                <Card imageSrc={"Images/Populars/Populars1.png"}></Card>
+                <Card imageSrc={"Images/Populars/Populars1.png"}></Card>
+                <Card imageSrc={"Images/Populars/Populars1.png"}></Card>
 
             </ReactSimplyCarousel>
         </div>
