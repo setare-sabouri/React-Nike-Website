@@ -1,4 +1,3 @@
-
 import { useState, useRef, useEffect } from "react";
 const NikePegasus = ({ materials, nodes }) => {
     const [ScWidth, setWidth] = useState(window.innerWidth);
