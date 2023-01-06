@@ -7,7 +7,7 @@ function Navbar() {
           <ul id="navbar">
             <li>
               <a href="index.html">
-                <img src="./images/Header/Logo-nike.png"></img>
+                <img src="Images/Header/Logo-nike.png"></img>
               </a>
             </li>
             <li>
@@ -50,11 +50,11 @@ function Navbar() {
 
         <div className="right-nav">
           <a href="index.html">
-            <img src="./images/Header/search-icon.png"></img>
+            <img src="Images/Header/search-icon.png"></img>
           </a>
           <a href="index.html">
             <a href="index.html">
-              <img src="./images/Header/bag-icon.png"></img>
+              <img src="./Images/Header/bag-icon.png"></img>
             </a>
           </a>
         </div>
