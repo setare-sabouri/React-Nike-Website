@@ -11,7 +11,7 @@ const Products = () => {
         <div className="box">
           <img
             className="product-img"
-            src="./images/Products/NewComer.png"
+            src="Images/Products/NewComer.png"
             alt=""
           />
           <p className="product-text">Newcomer</p>
@@ -20,7 +20,7 @@ const Products = () => {
         <div className="box">
           <img
             className="product-img"
-            src="./images/Products/Men.png"
+            src="Images/Products/Men.png"
             alt=""
           />
           <p className="product-text">Men</p>
@@ -29,7 +29,7 @@ const Products = () => {
         <div className="box">
           <img
             className="product-img"
-            src="./images/Products/Women.png"
+            src="Images/Products/Women.png"
             alt=""
           />
           <p className="product-text">Women</p>
@@ -38,7 +38,7 @@ const Products = () => {
         <div className="box">
           <img
             className="product-img"
-            src="./images/Products/Kids.png"
+            src="Images/Products/Kids.png"
             alt=""
           />
           <p className="product-text">Kids</p>
