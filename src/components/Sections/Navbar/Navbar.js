@@ -1,4 +1,6 @@
 import "./NavbarStyles.css";
+import { Link } from "react-router-dom"
+import AllProducts from "../../Pages/ProductPage/AllProducts";
 function Navbar() {
   return (
     <>
@@ -6,56 +8,57 @@ function Navbar() {
         <div className="left-nav">
           <ul id="navbar">
             <li>
-              <a href="index.html">
+              <Link to="/">
                 <img src="Images/Header/Logo-nike.png"></img>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="index.html">
+              <Link to="/products">
                 Men
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="index.html">
+              <Link to="/products">
                 Women
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="index.html">
+              <Link to="/products">
                 Kids
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="index.html">
+              <Link to="/products">
                 Customize
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="index.html">
+              <Link to="/products">
                 Sale
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="index.html">
+              <Link to="/products">
                 Shipping
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
+
         <div id="right-nav">
-          <a href="index.html">
+          <Link to="index.html">
             <img src="Images/Header/search-icon.png"></img>
-          </a>
-          <a href="index.html">
-            <a href="index.html">
+          </Link>
+          <Link to="/">
+            <Link to="/">
               <img src="./Images/Header/bag-icon.png"></img>
-            </a>
-          </a>
+            </Link>
+          </Link>
         </div>
       </nav>
     </>
