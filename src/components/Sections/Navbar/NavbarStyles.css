@@ -2,20 +2,31 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: white;
   color: black;
   width: 100%;
 }
 
 .left-nav {
+
   width: 100%;
+  display: flex;
+}
+
+.right-nav {
+  width: 10%;
+  height: 100%;
+  
+  justify-content: space-evenly;
+  align-items: flex-end;
+
 }
 
 #navbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   color: black;
+  gap: 24px;
 }
 
 #navbar li {
@@ -36,3 +47,19 @@ nav {
   font-size: 1.2rem;
   transition: 0.3s ease-in-out;
 }
+
+
+#right-nav {
+  display: flex;
+  gap: 16px;
+  color: black;
+}
+
+
+@media screen and (max-width:768px) {
+  #navbar li a {
+    font-size: 0.8rem;
+
+  }
+}
+

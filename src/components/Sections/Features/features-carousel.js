@@ -1,23 +1,25 @@
+
 import { useState, useEffect } from 'react';
-import "../../../styles/popular.css";
-import Card from './Popular-Cards/Popular-Cards';
+import "../../../styles/features.css";
+import Card from './features-cards';
 import ReactSimplyCarousel from 'react-simply-carousel';
 
-function PopularsCarousel() {
+
+
+
+function FeaturesCarousel() {
     const [activeSlideIndex, setActiveSlideIndex] = useState(1);
     useEffect(() => {
         setActiveSlideIndex(0);
     }, []);
     return (
-        <div className='carousel-container'>
+        <div className='features-container'>
             <ReactSimplyCarousel
                 className="carousel"
                 activeSlideIndex={activeSlideIndex}
                 onRequestChange={setActiveSlideIndex}
                 itemsToShow={3}
-
                 itemsToScroll={1}
-
                 showSlidesBeforeInit={true}
                 forwardBtnProps={{
                     className: "Carousel-btn right",
@@ -31,15 +33,15 @@ function PopularsCarousel() {
                 speed={400}
                 easing="linear"
             >
-                <Card imageSrc={"Images/Populars/Populars1.png"}></Card>
-                <Card imageSrc={"Images/Populars/Populars2.png"}></Card>
-                <Card imageSrc={"Images/Populars/Populars1.png"}></Card>
-                <Card imageSrc={"Images/Populars/Populars1.png"}></Card>
-                <Card imageSrc={"Images/Populars/Populars1.png"}></Card>
+                <Card imageSrc={"Images/Features/Model1.jpg"}></Card>
+                <Card imageSrc={"Images/Features/NikeBoot1.jpg"}></Card>
+                <Card imageSrc={"Images/Features/NikeBoot2.jpg"}></Card>
+                <Card imageSrc={"Images/Features/NikeBoot3.jpg"}></Card>
+                
 
             </ReactSimplyCarousel>
         </div>
     );
 }
 
-export default PopularsCarousel;
+export default FeaturesCarousel;
