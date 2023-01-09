@@ -47,8 +47,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
-
-        <div className="right-nav">
+        <div id="right-nav">
           <a href="index.html">
             <img src="Images/Header/search-icon.png"></img>
           </a>

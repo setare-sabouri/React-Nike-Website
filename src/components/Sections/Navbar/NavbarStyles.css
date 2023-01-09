@@ -7,15 +7,18 @@ nav {
 }
 
 .left-nav {
-  width: 90%;
+
+  width: 100%;
+  display: flex;
 }
 
 .right-nav {
   width: 10%;
   height: 100%;
-  display: flex;
+  
   justify-content: space-evenly;
   align-items: flex-end;
+
 }
 
 #navbar {
@@ -23,6 +26,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   color: black;
+  gap: 24px;
 }
 
 #navbar li {
@@ -45,9 +49,17 @@ nav {
 }
 
 
+#right-nav {
+  display: flex;
+  gap: 16px;
+  color: black;
+}
+
+
 @media screen and (max-width:768px) {
   #navbar li a {
     font-size: 0.8rem;
 
   }
 }
+

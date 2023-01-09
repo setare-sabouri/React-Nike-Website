@@ -15,7 +15,9 @@ function PopularsCarousel() {
                 activeSlideIndex={activeSlideIndex}
                 onRequestChange={setActiveSlideIndex}
                 itemsToShow={3}
+
                 itemsToScroll={1}
+
                 showSlidesBeforeInit={true}
                 forwardBtnProps={{
                     className: "Carousel-btn right",
