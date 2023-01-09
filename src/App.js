@@ -1,5 +1,4 @@
 import "./styles/fonts.css";
-import Header from "./components/Sections/Intro/header";
 import Products from "./components/Sections/Products/products";
 import Features from "./components/Sections/Features/features";
 import Populars from "./components/Sections/Populars/populars";

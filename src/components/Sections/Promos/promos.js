@@ -3,7 +3,7 @@ import "../../../styles/promos.css";
 const Promos = () => {
   return (
     // <section className="promo-section">
-    <div className="promo-container">
+    <div className="component promo-container">
       <div className="promo-header">
         <h1 className="header-font">
           Rewarding <br />
