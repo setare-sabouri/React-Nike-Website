@@ -1,7 +1,7 @@
 .features-component {
     flex-direction: column;
     align-items: flex-start;
-    align-items: start;
+    align-items: center;
 }
 
 .features-component h2 {
@@ -16,7 +16,7 @@
 
 .features-container div {
     display: flex;
-    gap: 2rem;
+    margin: 0px 1px;
 }
 
 .Carousel-btn {
