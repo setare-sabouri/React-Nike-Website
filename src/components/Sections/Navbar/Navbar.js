@@ -64,7 +64,7 @@ function Navbar() {
           </ul>
         </div>
 
-        <div>
+        <div id="right-nav">
           <a href="index.html">
             <svg
               aria-hidden="true"
