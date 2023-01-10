@@ -2,38 +2,52 @@
     flex-direction: column;
     align-items: flex-start;
     align-items: start;
+    width: 100vw;
+
 }
 
-.features-component h2 {
+.header-font {
     font-size: 3rem;
+    width: 90vw;
+    text-align: left;
+    margin: auto;
+}
+
+.features-component p {
+    width: 90vw;
+    text-align: left;
+    margin: auto;
 }
 
 .features-container {
-    padding: 2rem;
+    padding: 2rem 0;
     position: relative;
     width: 100%;
+
 }
 
 .features-container div {
     display: flex;
-    gap: 2rem;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.Carousel-btn {
+.Carousel-fea-btn {
     background-color: rgb(255, 254, 254);
-    border: 2px solid black;
-    border-radius: 6px;
+    border-radius: 50%;
     color: white;
     cursor: pointer;
     font-size: 20px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    border: unset;
     position: absolute;
+    z-index: 1;
 }
 
 
 
-.Carousel-btn span {
+.Carousel-fea-btn span {
     color: black;
 }
 
@@ -42,15 +56,15 @@
 
 }
 
-.left {
-    right: 10%;
-    top: -3%;
+.left-Fea {
+    left: 3%;
+    top: 50%;
 
 }
 
-.right {
-    right: 5%;
-    top: -3%;
+.right-Fea {
+    right: 3%;
+    top: 50%;
 }
 
 .card-wrapper {
@@ -58,15 +72,15 @@
 }
 
 
-@media screen and (max-width: 768px) {
-    .right {
+/* @media screen and (max-width: 768px) {
+    .right-Fea {
         right: -2%;
     }
 
     .card-img {
         height: 60%;
     }
-}
+} */
 
 
 @media screen and (min-width:768px) and (max-width:1200px) {

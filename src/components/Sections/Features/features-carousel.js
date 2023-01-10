@@ -18,15 +18,15 @@ function FeaturesCarousel() {
                 className="carousel"
                 activeSlideIndex={activeSlideIndex}
                 onRequestChange={setActiveSlideIndex}
-                itemsToShow={3}
+                itemsToShow={4}
                 itemsToScroll={1}
                 showSlidesBeforeInit={true}
                 forwardBtnProps={{
-                    className: "Carousel-btn right",
+                    className: "Carousel-fea-btn right-Fea",
                     children: <span>{`>`}</span>,
                 }}
                 backwardBtnProps={{
-                    className: "Carousel-btn left",
+                    className: "Carousel-fea-btn left-Fea",
                     children: <span>{`<`}</span>,
                 }}
 
@@ -37,7 +37,10 @@ function FeaturesCarousel() {
                 <Card imageSrc={"Images/Features/NikeBoot1.jpg"}></Card>
                 <Card imageSrc={"Images/Features/NikeBoot2.jpg"}></Card>
                 <Card imageSrc={"Images/Features/NikeBoot3.jpg"}></Card>
-                
+                <Card imageSrc={"Images/Features/Model1.jpg"}></Card>
+                <Card imageSrc={"Images/Features/Model1.jpg"}></Card>
+                <Card imageSrc={"Images/Features/Model1.jpg"}></Card>
+
 
             </ReactSimplyCarousel>
         </div>
