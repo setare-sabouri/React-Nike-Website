@@ -1,0 +1,11 @@
+.color-picker {
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+
+.SketchPicker {
+    width: 100%;
+    background: yellow !important;
+
+}

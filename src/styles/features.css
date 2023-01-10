@@ -37,6 +37,11 @@
     color: black;
 }
 
+.features-container div div {
+    overflow: unset;
+
+}
+
 .left {
     right: 10%;
     top: -3%;
@@ -48,6 +53,9 @@
     top: -3%;
 }
 
+.card-wrapper {
+    overflow: unset;
+}
 
 
 @media screen and (max-width: 768px) {
