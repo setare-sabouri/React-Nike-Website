@@ -1,6 +1,6 @@
 nav {
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: space-between;
 	color: black;
 	width: 100%;
@@ -12,17 +12,9 @@ nav {
 	display: flex;
 }
 
-.right-nav {
-	width: 10%;
-	height: 100%;
-
-	justify-content: space-evenly;
-	align-items: flex-end;
-}
-
 #navbar {
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: space-between;
 	color: black;
 	gap: 24px;
@@ -45,12 +37,6 @@ nav {
 #navbar li a:hover {
 	font-size: 1.2rem;
 	transition: 0.3s ease-in-out;
-}
-
-#right-nav {
-	display: flex;
-	gap: 16px;
-	color: black;
 }
 
 @media screen and (max-width: 768px) {
