@@ -51,14 +51,12 @@ function Navbar() {
         </div>
 
         <div id="right-nav">
-          <Link to="index.html">
+          <Link to="/">
             <img src="Images/Header/search-icon.png"></img>
           </Link>
-          <Link to="/">
-            <Link to="/">
+            <Link to="/cart">
               <img src="./Images/Header/bag-icon.png"></img>
             </Link>
-          </Link>
         </div>
       </nav>
     </>

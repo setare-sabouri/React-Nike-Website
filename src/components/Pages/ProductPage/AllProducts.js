@@ -1,6 +1,8 @@
+import { useState } from "react";
 import "../../../styles/AllProducts.css";
+import Cart from "../Cart/Cart";
 
-const ProductCard = ( {product} ) => {
+const ProductCard = ({ product, addToCart }) => {
   return (
     <div className="card">
       <img
@@ -9,16 +11,18 @@ const ProductCard = ( {product} ) => {
         alt={product.title}
       />
       <p>{`$${product.price}`}</p> <h3>{product.title}</h3> <br />{" "}
-      <button className="product-button">Add To Cart</button>
+      <button className="product-button" onClick={() => addToCart(product)}>
+        Add To Cart
+      </button>
     </div>
   );
 };
 
-const AllProducts = ({ products }) => {
+const AllProducts = ({ products, addToCart }) => {
   return (
     <div className="All-Products-Container">
       {products.map((product) => (
-        <ProductCard product={product} />
+        <ProductCard product={product} addToCart={addToCart} />
       ))}
     </div>
   );

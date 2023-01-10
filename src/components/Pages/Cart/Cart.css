@@ -1,0 +1,9 @@
+.cart-item-container {
+    border: 3px black solid;
+    margin-top: 50px;
+    text-align: center;
+}
+.cart-image {
+    max-height: 100px;
+    max-width: 200px;
+}
