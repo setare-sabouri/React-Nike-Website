@@ -1,12 +1,5 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
 import "./styles/fonts.css";
-import Products from "./components/Sections/Products/products";
-import Features from "./components/Sections/Features/features";
-import Populars from "./components/Sections/Populars/populars";
-import Promos from "./components/Sections/Promos/promos";
-import Footer from "./components/Sections/Footer/footer";
-import Intro from "./components/Sections/Intro/intro";
-import Navbar from "./components/Sections/Navbar/Navbar";
 import { BrowserRouter } from "react-router-dom";
 import {
   Route,
@@ -15,12 +8,21 @@ import {
 import AllProducts from "./components/Pages/ProductPage/AllProducts";
 import Home from "./Home";
 import ProductList from "./components/Pages/ProductPage/ProductList";
+import Navbar from "./components/Sections/Navbar/Navbar";
+import Cart from "./components/Pages/CartPage/Cart";
 
 const { productList } = ProductList;
 
 function App() {
+  const [cart, setCart] = useState([]);
+
+const addToCart = (product) => {
+  setCart([...cart, product]);
+};
+
   return (
     <BrowserRouter>
+    <Navbar />
       <Routes>
         <Route
           path="/"
@@ -31,9 +33,11 @@ function App() {
           element={
             <AllProducts
               products={productList}
+              addToCart={addToCart}
             />
           }
         />
+        <Route path="/cart" element={<Cart cart={cart}/>}/>
       </Routes>
     </BrowserRouter>
   );
