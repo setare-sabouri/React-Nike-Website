@@ -9,7 +9,9 @@ function Navbar() {
           <ul id="navbar">
             <li>
               <Link to="/">
+              <Link to="/">
                 <img src="Images/Header/Logo-nike.png"></img>
+              </Link>
               </Link>
             </li>
             <li>

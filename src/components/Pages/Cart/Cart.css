@@ -1,9 +1,38 @@
-.cart-item-container {
-    border: 3px black solid;
-    margin-top: 50px;
+.cart-page-container {
     text-align: center;
+    margin-top: 50px;
 }
+
+.cart-header {
+    font-family: "Poppins", sans-serif;
+    font-size: 56px;
+}
+
+.cart-item-container {
+    display: block;
+    text-align: center;
+    width: 50%;
+    border: 1px solid black;
+    text-decoration: underline;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.empty-cart {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+}
+
 .cart-image {
-    max-height: 100px;
-    max-width: 200px;
+    max-height: 75px;
+    max-width: 75px;
+}
+
+.total-price {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-decoration: underline;
 }
