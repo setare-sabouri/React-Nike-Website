@@ -49,9 +49,11 @@ function Navbar() {
 						</li>
 					</ul>
 				</div>
+				<Link to="/cart">
 				<div className="cart">
 					<img src="./Images/Header/bag-icon.png"></img>
 				</div>
+				</Link>
 			</nav>
 		</>
 	);
