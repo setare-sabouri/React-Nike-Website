@@ -1,4 +1,7 @@
-import { Route, Routes } from "react-router-dom";
+import {
+	Route,
+	Routes,
+} from "react-router-dom";
 import "./styles/fonts.css";
 import Products from "./components/Sections/Products/products";
 import Features from "./components/Sections/Features/features";
@@ -9,21 +12,20 @@ import Intro from "./components/Sections/Intro/intro";
 import Navbar from "./components/Sections/Navbar/Navbar";
 import AllProducts from "./components/Pages/ProductPage/AllProducts";
 
-
 function App() {
-  return (
-    <div className="App">
-      <div className="Header-Intro-Wrapper">
-        <Navbar />
-        <Intro />
-      </div>
-      <Products />
-      <Features />
-      <Populars />
-      <Promos />
-      <Footer />
-    </div>
-  );
+	return (
+		<div className="App">
+			<div className="Header-Intro-Wrapper">
+				<Navbar />
+				<Intro />
+			</div>
+			<Products />
+			<Features />
+			<Populars />
+			<Promos />
+			<Footer />
+		</div>
+	);
 }
 
 export default App;
