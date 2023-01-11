@@ -45,8 +45,6 @@
     z-index: 1;
 }
 
-
-
 .Carousel-fea-btn span {
     color: black;
 }
@@ -69,6 +67,10 @@
 
 .card-wrapper {
     overflow: unset;
+}
+
+.card-img {
+    z-index: -1;
 }
 
 
