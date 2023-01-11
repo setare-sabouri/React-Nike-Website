@@ -1,7 +1,4 @@
-import {
-	Route,
-	Routes,
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./styles/fonts.css";
 import Products from "./components/Sections/Products/products";
 import Features from "./components/Sections/Features/features";
@@ -11,7 +8,6 @@ import Footer from "./components/Sections/Footer/footer";
 import Intro from "./components/Sections/Intro/intro";
 import Navbar from "./components/Sections/Navbar/Navbar";
 import AllProducts from "./components/Pages/ProductPage/AllProducts";
-
 function App() {
 	return (
 		<div className="App">
