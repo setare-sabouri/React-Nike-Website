@@ -21,6 +21,7 @@
     "react-scripts": "5.0.1",
     "react-simply-carousel": "^8.4.1",
     "react-slick": "^0.29.0",
+    "use-snapshot": "^0.0.10",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

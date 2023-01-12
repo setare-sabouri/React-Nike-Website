@@ -9,7 +9,7 @@ import '../../styles/Model.css'
 function Model({ ModelGltf }) {
     const { materials, nodes } = useGLTF(ModelGltf);
     console.log(useGLTF(ModelGltf));
-    const [colorHexCode, setColorHexCode] = useState('#ffffff');
+    const [colorHexCode, setColorHexCode] = useState('#123654');
     const [Clicked, setclicked] = useState(false);
     return (
         <div id='canvas-container'>

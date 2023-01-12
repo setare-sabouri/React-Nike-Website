@@ -2,7 +2,7 @@ import "../../../styles/footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer-container">
+    <div className="component footer-container">
       <div className="footer-link-container">
         <div>
           <h3 className="footer-header-font">MENU</h3>
