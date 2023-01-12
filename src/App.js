@@ -14,15 +14,16 @@ import Cart from "./components/Pages/CartPage/Cart";
 const { productList } = ProductList;
 
 function App() {
+
   const [cart, setCart] = useState([]);
 
-const addToCart = (product) => {
-  setCart([...cart, product]);
-};
+  const addToCart = (product) => {
+    setCart([...cart, product]);
+  };
 
   return (
     <BrowserRouter>
-    <Navbar />
+      <Navbar />
       <Routes>
         <Route
           path="/"
@@ -37,7 +38,7 @@ const addToCart = (product) => {
             />
           }
         />
-        <Route path="/cart" element={<Cart cart={cart}/>}/>
+        <Route path="/cart" element={<Cart cart={cart} />} />
       </Routes>
     </BrowserRouter>
   );

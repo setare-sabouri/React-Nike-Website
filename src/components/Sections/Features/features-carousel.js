@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import "../../../styles/features.css";
+import "./features.css";
 import Card from './features-cards';
 import ReactSimplyCarousel from 'react-simply-carousel';
 

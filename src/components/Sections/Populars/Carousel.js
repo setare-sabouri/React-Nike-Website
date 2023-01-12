@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import "../../../styles/popular.css";
+import "./popular.css";
 import Card from './Popular-Cards/Popular-Cards';
 import ReactSimplyCarousel from 'react-simply-carousel';
 

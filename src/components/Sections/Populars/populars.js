@@ -1,4 +1,4 @@
-import "../../../styles/popular.css";
+import "./popular.css";
 import React, { useState } from 'react';
 import PopularsCarousel from "./Carousel";
 const Populars = () => {

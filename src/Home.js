@@ -9,15 +9,13 @@ import Navbar from "./components/Sections/Navbar/Navbar";
 function Home() {
   return (
     <div className="App">
-      <div className="Header-Intro-Wrapper">
-        <Intro />
-      </div>
+      <Intro />
       <Products />
       <Features />
       <Populars />
       <Promos />
       <Footer />
-    </div>
+    </div >
   );
 }
 

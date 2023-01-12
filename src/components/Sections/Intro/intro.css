@@ -3,7 +3,7 @@ header {
 }
 
 .intro-section {
-    height: 80%;
+    height: 80vh;
     position: relative;
 }
 
@@ -40,13 +40,6 @@ header {
 #canvas-container {
     width: 100%;
     height: 100%;
-}
-
-.intro-img {
-    width: 70%;
-    position: absolute;
-    bottom: 0;
-    transform: translate(-50%, 0%);
 }
 
 

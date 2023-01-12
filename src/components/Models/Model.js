@@ -3,7 +3,7 @@ import { useGLTF, OrbitControls, Environment, ContactShadows } from "@react-thre
 import NikePegasus from './Shoes/NikePegasus';
 import { useState } from 'react';
 import { SketchPicker } from 'react-color';
-import '../../styles/Model.css'
+import './Model.css'
 
 function Model({ ModelGltf }) {
     const { materials, nodes } = useGLTF(ModelGltf);

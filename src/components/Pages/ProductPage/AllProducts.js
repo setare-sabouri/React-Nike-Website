@@ -1,5 +1,7 @@
+
+import "./AllProducts.css";
+
 import { useState } from "react";
-import "../../../styles/AllProducts.css";
 import Cart from "../CartPage/Cart";
 
 const ProductCard = ({ product, addToCart }) => {
@@ -12,7 +14,7 @@ const ProductCard = ({ product, addToCart }) => {
 			/>
 			<p>{`$${product.price}`}</p>{" "}
 			<h3>{product.title}</h3> <br />{" "}
-			<button className="product-button"  onClick={() => addToCart(product)}>
+			<button className="product-button" onClick={() => addToCart(product)}>
 				Add To Cart
 			</button>
 		</div>
