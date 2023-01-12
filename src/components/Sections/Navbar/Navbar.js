@@ -49,6 +49,7 @@ function Navbar() {
 						</li>
 					</ul>
 				</div>
+				
 				<div className="cart">
 					<img src="./Images/Header/bag-icon.png"></img>
 				</div>

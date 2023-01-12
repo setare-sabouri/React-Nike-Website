@@ -12,7 +12,6 @@ function App() {
 	return (
 		<div className="App">
 			<div className="Header-Intro-Wrapper">
-				<Navbar />
 				<Intro />
 			</div>
 			<Products />
