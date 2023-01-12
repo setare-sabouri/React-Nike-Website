@@ -5,6 +5,7 @@ export default function Navbar() {
 	const [isNavExpanded, setIsNavExpanded] = useState(false);
 
 	return (
+<<<<<<< HEAD
 		<nav className="navigation">
 			<Link to="/">
 				<img src="Images/Header/Logo-nike.png"></img>
@@ -71,5 +72,60 @@ export default function Navbar() {
 				<img src="./Images/Header/bag-icon.png"></img>
 			</div>
 		</nav>
+=======
+		<>
+			<nav>
+				<div className="left-nav">
+					<ul id="navbar">
+						<li>
+							<Link to="/">
+								<img src="Images/Header/Logo-nike.png"></img>
+							</Link>
+						</li>
+						<li>
+							<Link to="/products">
+								Men
+							</Link>
+						</li>
+
+						<li>
+							<Link to="/products">
+								Women
+							</Link>
+						</li>
+
+						<li>
+							<Link to="/products">
+								Kids
+							</Link>
+						</li>
+
+						<li>
+							<Link to="/products">
+								Customize
+							</Link>
+						</li>
+
+						<li>
+							<Link to="/products">
+								Sale
+							</Link>
+						</li>
+
+						<li>
+							<Link to="/products">
+								Shipping
+							</Link>
+						</li>
+					</ul>
+				</div>
+				<Link to="/cart">
+				<div className="cart">
+					<img src="./Images/Header/bag-icon.png"></img>
+				</div>
+				</Link>
+			</nav>
+		</>
+>>>>>>> 27ba2c7e51bdbcb4e67b055644ee28ae21931860
 	);
 }
