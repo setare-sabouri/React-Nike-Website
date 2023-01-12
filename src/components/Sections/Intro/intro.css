@@ -42,13 +42,6 @@ header {
     height: 100%;
 }
 
-.intro-img {
-    width: 70%;
-    position: absolute;
-    bottom: 0;
-    transform: translate(-50%, 0%);
-}
-
 
 @media screen and (max-width:768px) {
 
