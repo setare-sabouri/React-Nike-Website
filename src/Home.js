@@ -9,7 +9,6 @@ import Navbar from "./components/Sections/Navbar/Navbar";
 function Home() {
   return (
     <div className="App">
-      <Navbar />
       <Intro />
       <Products />
       <Features />

@@ -1,10 +1,8 @@
-<<<<<<< HEAD
+
 import "./AllProducts.css";
-=======
+
 import { useState } from "react";
-import "../../../styles/AllProducts.css";
 import Cart from "../CartPage/Cart";
->>>>>>> 27ba2c7e51bdbcb4e67b055644ee28ae21931860
 
 const ProductCard = ({ product, addToCart }) => {
 	return (
@@ -16,7 +14,7 @@ const ProductCard = ({ product, addToCart }) => {
 			/>
 			<p>{`$${product.price}`}</p>{" "}
 			<h3>{product.title}</h3> <br />{" "}
-			<button className="product-button"  onClick={() => addToCart(product)}>
+			<button className="product-button" onClick={() => addToCart(product)}>
 				Add To Cart
 			</button>
 		</div>
