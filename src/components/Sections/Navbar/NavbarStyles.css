@@ -1,42 +1,55 @@
-nav {
+.navbar {
 	display: flex;
-	align-items: flex-end;
 	justify-content: space-between;
-	color: black;
-	width: 100%;
-	margin: Opx 2px;
+	padding: 2rem;
 }
 
 .left-nav {
-	width: 100%;
 	display: flex;
+	gap: 1rem;
+	flex-direction: row;
+	align-items: flex-start;
 }
 
-#navbar {
+.navbar-nav {
 	display: flex;
-	align-items: flex-end;
-	justify-content: space-between;
+	gap: 2rem;
+}
+
+.navbar-nav a {
 	color: black;
-	gap: 24px;
+	font: Helvetica;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 1.5rem;
+
 }
 
 #navbar li {
 	justify-content: center;
+	font-size: 1rem;
 	list-style: none;
 	position: relative;
 }
 
-#navbar li a {
-	text-decoration: none;
-	font-size: 1rem;
-	font-weight: 600;
-	color: black;
-	font: Helvetica;
-}
-
-#navbar li a:hover {
+.navbar-nav a:hover {
 	font-size: 1.2rem;
 	transition: 0.3s ease-in-out;
+}
+
+.sale-item {
+	position: relative;
+}
+
+.badge {
+	background-color: red;
+	color: white;
+	padding: 4px 8px;
+	text-align: center;
+	border-radius: 15px;
+	position: absolute;
+	top: -0.8rem;
+	left: 1.2rem;
 }
 
 @media screen and (max-width: 768px) {

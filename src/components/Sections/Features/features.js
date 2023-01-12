@@ -1,4 +1,4 @@
-import "../../../styles/features.css";
+import "./features.css";
 import React from 'react';
 import FeaturesCarousel from "./features-carousel";
 const Features = () => {
