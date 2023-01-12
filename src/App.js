@@ -11,16 +11,14 @@ import AllProducts from "./components/Pages/ProductPage/AllProducts";
 function App() {
 	return (
 		<div className="App">
-			<div className="Header-Intro-Wrapper">
-				<Navbar />
-				<Intro />
-			</div>
+			<Navbar />
+			<Intro />
 			<Products />
 			<Features />
 			<Populars />
 			<Promos />
 			<Footer />
-		</div>
+		</div >
 	);
 }
 
