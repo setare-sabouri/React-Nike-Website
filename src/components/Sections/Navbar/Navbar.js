@@ -1,9 +1,10 @@
 import { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-export default function Navbar() {
+import { Badge } from "react-bootstrap";
+export default function Navbar({ counter }) {
 	const [isNavExpanded, setIsNavExpanded] = useState(false);
-
+	console.log(counter);
 	return (
 		<nav className="navigation">
 			<Link to="/">
@@ -67,9 +68,12 @@ export default function Navbar() {
 					</li>
 				</ul>
 			</div>
-			<div className="cart">
-				<img src="./Images/Header/bag-icon.png"></img>
-			</div>
+			<Link to="/cart">
+				<div className="cart">
+					<img src="./Images/Header/bag-icon.png"></img>
+					<p>{counter}</p>
+				</div>
+			</Link>
 		</nav>
 	);
 }

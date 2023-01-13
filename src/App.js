@@ -11,14 +11,15 @@ import Navbar from "./components/Sections/Navbar/Navbar";
 import Cart from "./pages/CartPage/Cart";
 function App() {
   const [cart, setCart] = useState([]);
-
+  const [counter, setCounter] = useState(0);
   const addToCart = (product) => {
     setCart([...cart, product]);
+    setCounter((prev) => prev + 1)
   };
 
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar counter={counter} />
       <Routes>
         <Route
           path="/"
