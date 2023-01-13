@@ -1,5 +1,5 @@
 import "../../../styles/popular.css";
-import React, { useState } from 'react';
+import React from "react";
 import PopularsCarousel from "./Carousel";
 const Populars = () => {
   return (
@@ -7,9 +7,10 @@ const Populars = () => {
       <h2>Popular Picks</h2>
       <p>Our popular picks for most favorited Nike Men’s & Women’s shoes.</p>
       <PopularsCarousel />
-    </section >
-  )
-}
+    </section>
+  );
+};
 
 export default Populars;
-{/* <Card title={"ss"} imageSrc={"Images/Populars/Populars1.png"}></Card> */ }
+
+/* <Card title={"ss"} imageSrc={"Images/Populars/Populars1.png"}></Card> */
