@@ -6,10 +6,10 @@ const NikePegasus = ({ materials, nodes, Color, updatePicker }) => {
     const [ScWidth, setWidth] = useState(window.innerWidth);
     const meshEl = useRef();
     meshEl.current = ScWidth;
-
-    // bug for rotation when i resize the screen
-    useFrame((_, delta) => {
-        meshEl.current.rotation.y += 0.5 * delta
+    const rot = useRef()
+    // bug for rotation when i resize the screen and click on it (with one ref) --> i'm using 2 refs to solve this but ....
+    useFrame((state, delta) => {
+        rot.current.rotation.y += 0.5 * delta
     })
     useEffect(() => {
 
@@ -19,9 +19,10 @@ const NikePegasus = ({ materials, nodes, Color, updatePicker }) => {
     })
     return (
         <mesh
-            onClick={e => updatePicker((prev) => !prev)
-            }
             ref={meshEl}
+            onClick={e => (updatePicker((prev) => !prev))
+            }
+            ref={rot}
             geometry={nodes.defaultMaterial.geometry}
             material={materials.NikeShoe}
             material-color={Color}
