@@ -1,14 +1,11 @@
 import { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
-import {
-  Route,
-  Routes,
-} from "react-router-dom";
+import { Route, Routes, } from "react-router-dom";
 import AllProducts from "./pages/Shop-page/AllProducts";
 import Home from "./pages/Home-page";
 import ProductsDATA from "./pages/Shop-page/ProductsDATA";
 import Navbar from "./components/Sections/Navbar/Navbar";
-import Cart from "./pages/CartPage/Cart";
+import Cart from "./pages/Cart-Page/Cart";
 function App() {
   const [cart, setCart] = useState([]);
   const [counter, setCounter] = useState(0);

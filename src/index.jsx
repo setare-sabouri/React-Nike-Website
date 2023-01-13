@@ -8,7 +8,7 @@ import ProductsDATA from "./pages/Shop-page/ProductsDATA";
 
 const { productList } = ProductsDATA;
 
-const ProductsPage = () => {
+ const ProductsPage = () => {
 	const [searchTerm, setSearchTerm] = useState("");
 	const onChangeSearchTerm = (e) =>setSearchTerm(e.target.value);
 
@@ -36,7 +36,7 @@ const ProductsPage = () => {
 		</React.Fragment>
 	);
 };
-
+export default ProductsPage
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
