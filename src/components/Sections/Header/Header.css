@@ -1,16 +1,11 @@
-header {
-    height: 10%;
-}
-
 .intro-section {
-    height: 80vh;
+    height: 90vh;
     position: relative;
 }
 
 .intro-text-outlined {
     width: 100%;
     height: 100%;
-
     font-family: 'Poppins';
     font-size: 5rem;
     position: absolute;
@@ -25,7 +20,6 @@ header {
 .intro-text-main {
     width: 100%;
     height: 100%;
-
     font-family: 'Poppins';
     font-size: 5rem;
     position: absolute;
@@ -43,7 +37,18 @@ header {
 }
 
 
+
+
 @media screen and (max-width:768px) {
+
+    .intro-text-main,
+    .intro-text-outlined {
+        font-size: 3.8rem;
+        top: 30%;
+    }
+}
+
+@media screen and (max-width:481px) {
 
     .intro-text-main,
     .intro-text-outlined {
@@ -60,8 +65,8 @@ header {
 
     .intro-text-main,
     .intro-text-outlined {
-        font-size: 5rem;
-        top: 35%;
+        font-size: 6rem;
+        top: 25%;
     }
 
     .intro-text-main {

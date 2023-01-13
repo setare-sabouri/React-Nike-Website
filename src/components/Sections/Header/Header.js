@@ -1,6 +1,6 @@
-import './intro.css'
+import './Header.css'
 import Model from '../../Models/Model';
-const Intro = () => {
+const Header = () => {
     return (
         <section className="component intro-section">
             <h1 className='intro-text-outlined'>THE NEW 2022</h1>
@@ -10,4 +10,4 @@ const Intro = () => {
     )
 }
 
-export default Intro;
+export default Header;

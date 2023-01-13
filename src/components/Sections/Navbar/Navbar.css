@@ -2,7 +2,7 @@
 	position: relative;
 	display: flex;
 	align-items: center;
-	height: 60px;
+	height: 10vh;
 	width: 100%;
 	padding: 0.5rem 2rem;
 	background-color: #fff;
@@ -32,9 +32,11 @@
 
 .navigation-menu li a {
 	text-decoration: none;
+	color: black;
 	display: block;
 	width: 100%;
 	font-size: 1rem;
+	font-weight: 600;
 }
 
 .navigation-menu li a:hover {
@@ -70,7 +72,7 @@
 .badge {
 	background-color: red;
 	color: white;
-	padding: 1px 4px;
+	padding: 0px 4px;
 	text-align: center;
 	border-radius: 15px;
 	position: absolute;
