@@ -11,7 +11,7 @@ const ProductsDATA = [
 		id: 2,
 		image:
 			"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2016a636-2953-41b4-b496-55263f2b26bc/air-jordan-1-mid-shoes-X5pM09.png",
-		title: "Nike Choke Max ",
+		title: "Nike Dunk Low ",
 		price: 500,
 	},
 	{
