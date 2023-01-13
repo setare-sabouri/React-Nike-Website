@@ -30,16 +30,16 @@ function FeaturesCarousel() {
                     children: <span>{`<`}</span>,
                 }}
 
-                speed={400}
+                speed={200}
                 easing="linear"
             >
-                <Card imageSrc={"Images/Features/Model1.jpg"}></Card>
                 <Card imageSrc={"Images/Features/NikeBoot1.jpg"}></Card>
                 <Card imageSrc={"Images/Features/NikeBoot2.jpg"}></Card>
                 <Card imageSrc={"Images/Features/NikeBoot3.jpg"}></Card>
                 <Card imageSrc={"Images/Features/Model1.jpg"}></Card>
-                <Card imageSrc={"Images/Features/Model1.jpg"}></Card>
-                <Card imageSrc={"Images/Features/Model1.jpg"}></Card>
+                <Card imageSrc={"Images/Features/NikeBoot1.jpg"}></Card>
+                <Card imageSrc={"Images/Features/NikeBoot2.jpg"}></Card>
+
 
 
             </ReactSimplyCarousel>

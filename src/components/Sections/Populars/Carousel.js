@@ -33,9 +33,9 @@ function PopularsCarousel() {
             >
                 <Card imageSrc={"Images/Populars/Populars1.png"}></Card>
                 <Card imageSrc={"Images/Populars/Populars2.png"}></Card>
+                <Card imageSrc={"Images/Populars/Populars3.png"}></Card>
                 <Card imageSrc={"Images/Populars/Populars1.png"}></Card>
-                <Card imageSrc={"Images/Populars/Populars1.png"}></Card>
-                <Card imageSrc={"Images/Populars/Populars1.png"}></Card>
+                <Card imageSrc={"Images/Populars/Populars2.png"}></Card>
 
             </ReactSimplyCarousel>
         </div>
