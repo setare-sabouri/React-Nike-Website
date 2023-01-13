@@ -2,28 +2,15 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter } from "react-router-dom";
-import {
-	Route,
-	Routes,
-} from "react-router-dom";
-import AllProducts from "./components/Pages/ProductPage/AllProducts";
+import AllProducts from "./pages/Shop-page/AllProducts";
 import Navbar from "./components/Sections/Navbar/Navbar";
-import ProductList from "./components/Pages/ProductPage/ProductList";
+import ProductsDATA from "./pages/Shop-page/ProductsDATA";
 
-const { productList } = ProductList;
-
-const root = ReactDOM.createRoot(
-	document.getElementById("root")
-);
+const { productList } = ProductsDATA;
 
 const ProductsPage = () => {
-	const [searchTerm, setSearchTerm] =
-		useState("");
-
-	const onChangeSearchTerm = (e) =>
-		setSearchTerm(e.target.value);
+	const [searchTerm, setSearchTerm] = useState("");
+	const onChangeSearchTerm = (e) =>setSearchTerm(e.target.value);
 
 	const filteredProducts =
 		productList.filter((product) => {
@@ -50,10 +37,10 @@ const ProductsPage = () => {
 	);
 };
 
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
 		<App />
 	</React.StrictMode>
 );
 
-reportWebVitals();

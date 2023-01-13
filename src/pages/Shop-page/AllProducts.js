@@ -1,9 +1,4 @@
-
 import "./AllProducts.css";
-
-import { useState } from "react";
-import Cart from "../CartPage/Cart";
-
 const ProductCard = ({ product, addToCart }) => {
 	return (
 		<div className="card">

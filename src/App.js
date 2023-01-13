@@ -1,20 +1,15 @@
 import { useState } from "react";
-import "./styles/fonts.css";
 import { BrowserRouter } from "react-router-dom";
 import {
   Route,
   Routes,
 } from "react-router-dom";
-import AllProducts from "./components/Pages/ProductPage/AllProducts";
-import Home from "./Home";
-import ProductList from "./components/Pages/ProductPage/ProductList";
+import AllProducts from "./pages/Shop-page/AllProducts";
+import Home from "./pages/Home-page";
+import ProductsDATA from "./pages/Shop-page/ProductsDATA";
 import Navbar from "./components/Sections/Navbar/Navbar";
-import Cart from "./components/Pages/CartPage/Cart";
-
-const { productList } = ProductList;
-
+import Cart from "./pages/CartPage/Cart";
 function App() {
-
   const [cart, setCart] = useState([]);
 
   const addToCart = (product) => {
@@ -33,7 +28,7 @@ function App() {
           path="/products"
           element={
             <AllProducts
-              products={productList}
+              products={ProductsDATA}
               addToCart={addToCart}
             />
           }
