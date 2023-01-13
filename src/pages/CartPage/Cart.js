@@ -1,7 +1,7 @@
 import React from "react";
 import "./Cart.css";
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, handleDelete }) => {
   const totalPrice = cart.reduce((total, cart) => {
     return (total + cart.price)
   }, 0)
@@ -14,8 +14,11 @@ const Cart = ({ cart }) => {
       {cart.map((cartProduct) => (
         <>
           <h3 className="cart-item-container paragraph-font">
+            <img className="cart-image" alt="product image" src={cartProduct.image} />{" "}
             {cartProduct.title} ${cartProduct.price}{" "}
-            <img className="cart-image" src={cartProduct.image} />{" "}
+            <div className="Delete-button-container">
+            <button className="delete-cart-item-btn" onClick={() => handleDelete(cartProduct.id)}>Delete item</button>
+            </div>
           </h3>
         </>
       ))}
@@ -23,5 +26,4 @@ const Cart = ({ cart }) => {
     </div>
   );
 };
-
 export default Cart;

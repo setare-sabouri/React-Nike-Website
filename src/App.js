@@ -17,6 +17,12 @@ function App() {
     setCounter((prev) => prev + 1)
   };
 
+  const handleDelete = (id) => {
+    const newCart = cart.filter(test => test.id !== id);
+    setCart(newCart);
+    setCounter((prev) => prev - 1);
+  }
+
   return (
     <BrowserRouter>
       <Navbar counter={counter} />
@@ -34,7 +40,7 @@ function App() {
             />
           }
         />
-        <Route path="/cart" element={<Cart cart={cart} />} />
+        <Route path="/cart" element={<Cart cart={cart} handleDelete={handleDelete}/>} />
       </Routes>
     </BrowserRouter>
   );
