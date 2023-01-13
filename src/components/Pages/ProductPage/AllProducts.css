@@ -5,9 +5,9 @@
     height: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 30px;
     column-gap: 192px;
     padding: 0 96px;
+    padding-top: 2rem;
     border: 3px solid black;
 }
 

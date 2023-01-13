@@ -30,7 +30,7 @@ function FeaturesCarousel() {
                     children: <span>{`<`}</span>,
                 }}
 
-                speed={200}
+                speed={500}
                 easing="linear"
             >
                 <Card imageSrc={"Images/Features/NikeBoot1.jpg"}></Card>

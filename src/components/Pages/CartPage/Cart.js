@@ -2,9 +2,9 @@ import React from "react";
 import "./Cart.css";
 
 const Cart = ({ cart }) => {
-    const totalPrice = cart.reduce((total, cart) => {
-        return (total + cart.price)
-    }, 0)
+  const totalPrice = cart.reduce((total, cart) => {
+    return (total + cart.price)
+  }, 0)
   return (
     <div>
       <div className="cart-page-container">
@@ -19,7 +19,7 @@ const Cart = ({ cart }) => {
           </h3>
         </>
       ))}
-        {cart.length >= 1 && <div className="total-price">{`Your total is:  $${totalPrice}`}</div>}
+      {cart.length >= 1 && <div className="total-price">{`Your total is:  $${totalPrice}`}</div>}
     </div>
   );
 };
