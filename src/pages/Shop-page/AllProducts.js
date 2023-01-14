@@ -7,8 +7,8 @@ const ProductCard = ({ product, addToCart }) => {
 				src={product.image}
 				alt={product.title}
 			/>
-			<p>{`$${product.price}`}</p>
-			<h3>{product.title}</h3> <br />
+			<p className="product-font">{product.title}</p>
+			<p className="product-font">{`$ ${product.price}`}</p> <br />
 			<button className="product-button" onClick={() => addToCart(product)}>
 				Add To Cart
 			</button>
