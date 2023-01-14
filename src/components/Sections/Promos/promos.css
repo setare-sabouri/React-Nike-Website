@@ -44,3 +44,10 @@
         width: 50%;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .join-now-button {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

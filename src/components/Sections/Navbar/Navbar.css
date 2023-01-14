@@ -80,6 +80,13 @@
 	left: 1.2rem;
 }
 
+.counter-styling {
+	font-family: 'Poppins', sans-serif;
+	position: absolute;
+	top: 5px;
+	color: red;
+	}
+
 @media screen and (max-width: 550px) {
 	.hamburger {
 		display: block;
@@ -120,11 +127,11 @@
 	.badge {
 		display: none;
 	}
+
+	.counter-styling {
+		top: 1.5px;
+		font-size: 18px;
+		text-decoration: underline;
+	}
 }
 
-.counter-styling {
-	font-family: 'Poppins', sans-serif;
-	position: absolute;
-	top: 5px;
-	color: red;
-}
