@@ -4,7 +4,7 @@ const ProductsDATA = [
 		id: 1,
 		image:
 			"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0c24361e-438e-4f03-a1ba-f293b0e475dd/air-max-270-older-shoes-MLXfXG.png",
-		title: "Nike Air Max",
+		title: "Nike Air Max Alpha",
 		price: 300,
 	},
 	{
