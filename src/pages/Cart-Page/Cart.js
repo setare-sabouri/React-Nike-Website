@@ -15,14 +15,14 @@ const Cart = ({ cart, handleDelete }) => {
         <>
           <h3 className="cart-item-container paragraph-font">
             <img className="cart-image" alt="product image" src={cartProduct.image} />{" "}
-            {cartProduct.title} ${cartProduct.price}{" "}
+            {cartProduct.title} <br /> ${cartProduct.price}{" "}
             <div className="Delete-button-container">
-            <button className="delete-cart-item-btn" onClick={() => handleDelete(cartProduct.id)}>Delete item</button>
+            <button className="delete-cart-item-btn" onClick={() => handleDelete(cartProduct.id)}> <img className="delete-btn-img" src="./Images/Delete-btn/delete-btn-png.png" alt="" /> </button>
             </div>
           </h3>
         </>
       ))}
-      {cart.length >= 1 && <div className="total-price">{`Your total is:  $${totalPrice}`}</div>}
+      {cart.length >= 1 && <div className="total-price">{`Your total is:  $${totalPrice}`} <br /> <button className="checkout-btn">Proceed to checkout</button> </div>}
     </div>
   );
 };
