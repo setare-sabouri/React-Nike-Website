@@ -129,9 +129,8 @@
 	}
 
 	.counter-styling {
-		top: 1.5px;
+		top: 0px;
 		font-size: 18px;
-		text-decoration: underline;
 	}
 }
 
