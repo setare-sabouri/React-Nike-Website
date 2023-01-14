@@ -70,9 +70,13 @@ export default function Navbar({ counter }) {
 			<Link to="/cart">
 				<div className="cart">
 					<img src="./Images/Header/bag-icon.png"></img>
-					<p>{counter}</p>
+					{counter >= 1 && <p className="counter-styling">{counter}</p> }
+					{/* added functionality for removing the counter/number when its empty
+					 <p className="counter-stuling">{counter}</p> */}
 				</div>
 			</Link>
 		</nav>
 	);
 }
+
+

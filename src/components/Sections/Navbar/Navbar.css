@@ -121,3 +121,10 @@
 		display: none;
 	}
 }
+
+.counter-styling {
+	font-family: 'Poppins', sans-serif;
+	position: absolute;
+	top: 5px;
+	color: red;
+}
