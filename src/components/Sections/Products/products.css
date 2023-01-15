@@ -49,6 +49,9 @@
 
     .product-list {
         flex-wrap: wrap;
+    }
 
+    .products-section {
+        margin-bottom: 48px;
     }
 }

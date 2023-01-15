@@ -2,7 +2,7 @@
     flex-direction: column;
     align-items: flex-start;
     align-items: start;
-    margin-bottom: 119px;
+    margin-bottom: 96px;
 }
 
 .populars-component h2 {
@@ -58,6 +58,10 @@
 
     .card-img {
         height: 60%;
+    }
+
+    .populars-component {
+        margin-bottom: 0px;
     }
 }
 
