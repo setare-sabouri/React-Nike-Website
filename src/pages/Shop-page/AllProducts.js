@@ -8,7 +8,7 @@ const ProductCard = ({ product, addToCart }) => {
 				alt={product.title}
 			/>
 			<p className="product-font">{product.title}</p>
-			<p className="product-font">{`$ ${product.price}`}</p> <br />
+			<p className="product-font"> <strong> {`$ ${product.price}`} </strong></p> <br />
 			<button className="product-button" onClick={() => addToCart(product)}>
 				Add To Cart
 			</button>

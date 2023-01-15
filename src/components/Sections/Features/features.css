@@ -3,6 +3,7 @@
 	align-items: flex-start;
 	align-items: start;
 	width: 100vw;
+	margin-bottom: 96px;
 }
 
 .header-font {
@@ -14,7 +15,7 @@
 
 .features-component p {
 	width: 90vw;
-	text-align: left;
+	text-align: center;
 	margin: auto;
 }
 

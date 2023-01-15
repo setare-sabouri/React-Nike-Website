@@ -42,6 +42,9 @@ const Footer = () => {
           Beaverton, OR 97005-6453 <br />
           USA <br />
           <br />
+          <img className="social-media-icon" src="./Images/Social-media-icon/eva_twitter-fill.png" alt="twitter icon" />
+          <img className="social-media-icon" src="./Images/Social-media-icon/eva_facebook-fill.png" alt="facebook icon" />
+           <img className="social-media-icon" src="./Images/Social-media-icon/eva_email-fill.png" alt="email icon" />
           <br />
           <br /> © 2022 Nike, Inc. All Rights Reserved
         </p>
