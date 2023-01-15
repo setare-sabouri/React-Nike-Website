@@ -1,6 +1,7 @@
 .products-section {
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 96px;
 }
 
 .product-list {

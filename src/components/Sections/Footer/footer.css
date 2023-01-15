@@ -35,6 +35,10 @@ li {
     text-align: right;
     }
 
+    .social-media-icon {
+        margin-left: 12px;
+    }
+
 
     @media only screen and (max-width: 850px) {
         .footer-container {

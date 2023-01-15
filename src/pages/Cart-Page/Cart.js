@@ -14,10 +14,10 @@ const Cart = ({ cart, handleDelete }) => {
       {cart.map((cartProduct) => (
         <>
           <h3 className="cart-item-container paragraph-font">
-            <img className="cart-image" alt="product image" src={cartProduct.image} />{" "}
+            <img className="cart-image" alt="nike product" src={cartProduct.image} />{" "}
             {cartProduct.title} <br /> ${cartProduct.price}{" "}
             <div className="Delete-button-container">
-            <button className="delete-cart-item-btn" onClick={() => handleDelete(cartProduct.id)}> <img className="delete-btn-img" src="./Images/Delete-btn/delete-btn-png.png" alt="" /> </button>
+            <button className="delete-cart-item-btn" onClick={() => handleDelete(cartProduct.id)}> <img className="delete-btn-img" src="./Images/Delete-btn/delete-btn-png.png" alt="delete item icon" /> </button>
             </div>
           </h3>
         </>
