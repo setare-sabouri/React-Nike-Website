@@ -37,7 +37,7 @@ function App() {
             />
           }
         />
-        <Route path="/cart" element={<Cart cart={cart} handleDelete={handleDelete}/>} />
+        <Route path="/cart" element={<Cart cart={cart} handleDelete={handleDelete} />} />
       </Routes>
     </BrowserRouter>
   );

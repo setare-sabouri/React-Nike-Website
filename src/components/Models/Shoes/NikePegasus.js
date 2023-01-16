@@ -1,4 +1,3 @@
-
 import { useState, useRef, useEffect } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Prev } from "react-bootstrap/esm/PageItem";
@@ -12,7 +11,6 @@ const NikePegasus = ({ materials, nodes, Color, updatePicker }) => {
         rot.current.rotation.y += 0.5 * delta
     })
     useEffect(() => {
-
         window.addEventListener('resize', function () {
             setWidth(window.innerWidth);
         })

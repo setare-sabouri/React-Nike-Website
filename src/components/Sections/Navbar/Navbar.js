@@ -1,12 +1,12 @@
 import { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-export default function Navbar({ counter }) {
+
+function Navbar({ counter }) {
 	const [isNavExpanded, setIsNavExpanded] = useState(false);
-	console.log(counter);
 	return (
 		<nav className="navigation">
-			<Link to="/">
+			<Link to="./">
 				<img src="Images/Header/Logo-nike.png"></img>
 			</Link>
 			<button
@@ -70,9 +70,11 @@ export default function Navbar({ counter }) {
 			<Link to="/cart">
 				<div className="cart">
 					<img src="./Images/Header/bag-icon.png"></img>
-					{counter >= 1 && <p className="counter-styling">{counter}</p> }
-					{/* added functionality for removing the counter/number when its empty
-					 <p className="counter-stuling">{counter}</p> */}
+					{counter >= 1 ?
+						(<p className="counter-styling">{counter}</p>)
+						:
+						(<p className="counter-styling"></p>)
+					}
 				</div>
 			</Link>
 		</nav>
@@ -80,3 +82,4 @@ export default function Navbar({ counter }) {
 }
 
 
+export default Navbar
