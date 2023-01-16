@@ -15,9 +15,16 @@ function App() {
   };
 
   const handleDelete = (id) => {
-    const newCart = cart.filter(test => test.id !== id);
+    const newCart = cart.filter(test => {
+      if (test.id !== id) {
+        return test
+      }
+      else {
+        setCounter((prev) => prev - 1);
+      }
+    }
+    );
     setCart(newCart);
-    setCounter((prev) => prev - 1);
   }
 
   return (

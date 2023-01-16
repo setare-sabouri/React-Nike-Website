@@ -73,7 +73,7 @@ function Navbar({ counter }) {
 					{counter >= 1 ?
 						(<p className="counter-styling">{counter}</p>)
 						:
-						(<p className="counter-styling"></p>)
+						(<p className="counter-styling">{""}</p>)
 					}
 				</div>
 			</Link>
