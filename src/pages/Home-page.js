@@ -1,9 +1,9 @@
+import Header from "../components/Sections/Header/Header"
 import Products from "../components/Sections/Products/products";
 import Features from "../components/Sections/Features/features";
 import Populars from "../components/Sections/Populars/populars";
 import Promos from "../components/Sections/Promos/promos";
 import Footer from "../components/Sections/Footer/footer";
-import Header from "../components/Sections/Header/Header"
 function Home() {
   return (
     <div className="App">

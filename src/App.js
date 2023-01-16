@@ -7,17 +7,26 @@ import ProductsDATA from "./pages/Shop-page/ProductsDATA";
 import Navbar from "./components/Sections/Navbar/Navbar";
 import Cart from "./pages/Cart-Page/Cart";
 function App() {
-  const [cart, setCart] = useState([]);
+  const [carts, setCart] = useState([]);
   const [counter, setCounter] = useState(0);
+
   const addToCart = (product) => {
-    setCart([...cart, product]);
+    setCart([...carts, product]);
     setCounter((prev) => prev + 1)
   };
 
   const handleDelete = (id) => {
-    const newCart = cart.filter(test => test.id !== id);
+    const newCart = carts.filter(test => {
+
+      if (test.id !== id) {
+        return test
+      }
+      else {
+        setCounter((prev) => prev - 1);
+      }
+    }
+    );
     setCart(newCart);
-    setCounter((prev) => prev - 1);
   }
 
   return (
@@ -37,7 +46,7 @@ function App() {
             />
           }
         />
-        <Route path="/cart" element={<Cart cart={cart} handleDelete={handleDelete}/>} />
+        <Route path="/cart" element={<Cart carts={carts} handleDelete={handleDelete} />} />
       </Routes>
     </BrowserRouter>
   );
