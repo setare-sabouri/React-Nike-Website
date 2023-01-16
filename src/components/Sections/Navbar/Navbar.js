@@ -6,7 +6,7 @@ function Navbar({ counter }) {
 	const [isNavExpanded, setIsNavExpanded] = useState(false);
 	return (
 		<nav className="navigation">
-			<Link to="./">
+			<Link to="/">
 				<img src="Images/Header/Logo-nike.png"></img>
 			</Link>
 			<button
