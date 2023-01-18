@@ -35,3 +35,4 @@
 implemented with [Three-fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
 
 # Tech Stack
+[Carousel package](https://www.npmjs.com/package/react-simply-carousel)
