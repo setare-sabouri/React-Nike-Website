@@ -10,7 +10,8 @@
 
 [Website Demo](https://react-nike-website.vercel.app/)
 
-# Structure
+# Overall Components Tree
+![bedeleted](https://user-images.githubusercontent.com/100029656/213692876-92070ee0-127e-41a5-8baf-682c7b7017f7.png)
 
 # Components
 
