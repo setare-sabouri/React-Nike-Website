@@ -37,4 +37,5 @@ implemented with [Three-fiber](https://docs.pmnd.rs/react-three-fiber/getting-st
 
 # Tech Stack
 [Carousel package](https://www.npmjs.com/package/react-simply-carousel)
+
 [Color picker package](https://www.npmjs.com/package/react-color)
