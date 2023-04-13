@@ -25,4 +25,5 @@ implemented with [Three-fiber](https://docs.pmnd.rs/react-three-fiber/getting-st
 [Carousel package](https://www.npmjs.com/package/react-simply-carousel)
 
 [Color picker package](https://www.npmjs.com/package/react-color)
-[React fiber]
+
+[React fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)

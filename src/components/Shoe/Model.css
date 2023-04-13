@@ -1,0 +1,33 @@
+.color-picker {
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+
+.SketchPicker {
+    width: 100%;
+}
+
+.click-icon {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    animation: bounce 1s infinite ease-in-out;
+    color: #000000;
+    font-weight: 600;
+
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

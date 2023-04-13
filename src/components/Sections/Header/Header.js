@@ -1,5 +1,5 @@
 import './Header.css'
-import Model from '../../Models/Model';
+import Model from '../../Shoe/Model';
 const Header = () => {
     return (
         <section className="component intro-section">

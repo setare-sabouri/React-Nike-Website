@@ -6,7 +6,6 @@ const NikePegasus = ({ materials, nodes, Color, updatePicker }) => {
     const meshEl = useRef();
     meshEl.current = ScWidth;
     const rot = useRef()
-    // bug for rotation when i resize the screen and click on it (with one ref) --> i'm using 2 refs to solve this but ....
     useFrame((state, delta) => {
         rot.current.rotation.y += 0.5 * delta
     })
@@ -15,9 +14,9 @@ const NikePegasus = ({ materials, nodes, Color, updatePicker }) => {
             setWidth(window.innerWidth);
         })
     })
-    // console.log(materials);
-    // console.log(nodes);
+
     return (
+
         <group
             ref={meshEl}
             ref={rot}
@@ -46,6 +45,7 @@ const NikePegasus = ({ materials, nodes, Color, updatePicker }) => {
                 material-color={Color}
             />
         </group>
+
 
 
     )

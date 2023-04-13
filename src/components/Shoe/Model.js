@@ -1,15 +1,16 @@
 import { Canvas } from '@react-three/fiber'
 import { useGLTF, OrbitControls, Environment, ContactShadows } from "@react-three/drei";
 import NikePegasus from './NikePegasus';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { SketchPicker } from 'react-color';
+import { ClickIcon } from './ClickIcon';
 import './Model.css'
-
 function Model({ ModelGltf }) {
     const { materials, nodes } = useGLTF(ModelGltf);
     console.log(useGLTF(ModelGltf));
     const [colorHexCode, setColorHexCode] = useState('#ffffff');
     const [Clicked, setclicked] = useState(false);
+
     return (
         <div id='canvas-container'>
             <Canvas shadows camera={{ position: [2, 0, 0] }}>
@@ -22,15 +23,18 @@ function Model({ ModelGltf }) {
                 <directionalLight castShadow color={"red"} far={5} />
                 <NikePegasus materials={materials} nodes={nodes} Color={colorHexCode} updatePicker={setclicked} />
             </Canvas>
+
             <div className={'color-picker'}
                 style={{ display: Clicked ? "block" : "none" }}>
                 <SketchPicker
                     width="20%"
                     className={SketchPicker}
                     color={colorHexCode}
-                    onChange={e => setColorHexCode(e.hex)} />
+                    onChange={e => setColorHexCode(e.hex)}
+                />
             </div>
 
+            <ClickIcon Clicked={Clicked} />
         </div >
     );
 }
