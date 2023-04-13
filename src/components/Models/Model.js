@@ -1,12 +1,13 @@
 import { Canvas } from '@react-three/fiber'
 import { useGLTF, OrbitControls, Environment, ContactShadows } from "@react-three/drei";
-import NikePegasus from './Shoes/NikePegasus';
+import NikePegasus from './NikePegasus';
 import { useState } from 'react';
 import { SketchPicker } from 'react-color';
 import './Model.css'
 
 function Model({ ModelGltf }) {
     const { materials, nodes } = useGLTF(ModelGltf);
+    console.log(useGLTF(ModelGltf));
     const [colorHexCode, setColorHexCode] = useState('#ffffff');
     const [Clicked, setclicked] = useState(false);
     return (
@@ -26,7 +27,6 @@ function Model({ ModelGltf }) {
                 <SketchPicker
                     width="20%"
                     className={SketchPicker}
-
                     color={colorHexCode}
                     onChange={e => setColorHexCode(e.hex)} />
             </div>
