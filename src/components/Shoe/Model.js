@@ -7,7 +7,6 @@ import { ClickIcon } from './ClickIcon';
 import './Model.css'
 function Model({ ModelGltf }) {
     const { materials, nodes } = useGLTF(ModelGltf);
-    console.log(useGLTF(ModelGltf));
     const [colorHexCode, setColorHexCode] = useState('#ffffff');
     const [Clicked, setclicked] = useState(false);
 
@@ -17,7 +16,6 @@ function Model({ ModelGltf }) {
                 <spotLight intensity={0.4} angle={0.2} penumbra={1} position={[0, 0, 2]} castShadow />
                 <OrbitControls enableZoom={false} />
                 <ambientLight intensity={1} />
-                <Environment preset="city" />
                 <ContactShadows position={[0, -0.6, 0]} opacity={0.5} scale={8} blur={2} far={2} color={'#FFEF32'} />   {/*yellow*/}
                 <ContactShadows position={[0, -0.6, 0]} opacity={0.7} scale={8} blur={3} far={0.9} color={'#120099'} />   {/* blue */}
                 <directionalLight castShadow color={"red"} far={5} />
@@ -36,6 +34,7 @@ function Model({ ModelGltf }) {
 
             <ClickIcon Clicked={Clicked} />
         </div >
+
     );
 }
 export default Model;
